@@ -54,11 +54,11 @@ def mastermind():
 ROUND  = 0
 SECRET = None
 
-# We extend the mastermind game with a step-function. This function
-# is called with a parsed guess (so a tuple), and returns the amount
-# of red and white pins as a tuple: (white_pins, red_pins). It also
-# increments the global variable ROUND and in the very first round it
-# chooses a random secret and saves it in SECRET.
+# We extend the mastermind game with a step-function. This function is called
+# with a parsed guess (so a tuple), and returns the amount of
+# correct-color-and-place and correct-color pins as a tuple: (white_pins, red_pins).
+# It also increments the global variable ROUND and in the very first
+# round it chooses a random secret and saves it in SECRET.
 # 
 # This leaves an open question, how do we know that we have won?
 
@@ -75,6 +75,7 @@ def mastermind_step(guess):
 # it takes (yet).
 
 def bruteforce():
+    return
 
 # Test that the functions where correctly implemented.
 
